@@ -26,7 +26,7 @@ import platform
 import time
 from docopt import docopt
 import paho.mqtt.client as mqtt
-from serial import Serial
+from serial import Serial, SerialException
 from serial.tools import list_ports
 
 if platform.system() == 'Linux':
